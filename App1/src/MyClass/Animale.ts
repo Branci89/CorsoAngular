@@ -2,7 +2,7 @@ abstract class Animale {
  
     razza : string;
     eta : number; 
-    specie; string;
+    specie: string;
     
     constructor(_razza:string, _eta: number, _specie: string){
         this.razza = _razza;
@@ -22,7 +22,7 @@ abstract class Animale {
         console.log("Ho cacciato");
     }
 
-    abstract emettiVerso();
+    abstract emettiVerso(): void;
 }
 
 
