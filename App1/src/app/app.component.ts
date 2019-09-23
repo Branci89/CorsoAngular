@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'App1';
+  title = 'Corso Speciale';
+  num_Click = 0;
+  
+  contaclick = function(){
+    this.num_Click++;
+  }
 }
+  
