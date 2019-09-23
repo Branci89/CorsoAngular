@@ -74,7 +74,7 @@ for(var i = 0; i< zoo.length ; i++){
     var anim = zoo[i];
     if(anim.eta != 15){
         anim.emettiVerso();
-        console.log(anim);
+        
 
     }
 }
