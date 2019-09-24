@@ -9,7 +9,7 @@ import { Articolo } from 'src/app/models/articolo';
 export class ArticoloComponent  {
   //si può spostare la logica del componente o al padre (app-component) o al figlio. Un componente può prendere in input un articolo e prendersi 
   //in carico di disegnarlo, opppure, può recuperare un model e disegnarsi, poi questo componente, avrà "vita propria" nell'applicazione
-  
+
  /*  articolo: Articolo = new Articolo;
   constructor() {
     this.articolo.titolo = "la bella vita";
@@ -18,5 +18,5 @@ export class ArticoloComponent  {
    } */
 
     @Input() articolo: Articolo;
-    
+    @Input() masterArray: Array<string>;
 }

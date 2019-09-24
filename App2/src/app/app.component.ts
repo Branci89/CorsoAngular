@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Articolo }  from 'src/app/models/articolo';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,13 +15,17 @@ export class AppComponent {
 
   items: Array<string> = new Array("Claudio","Bruno","Alfredo","Emilio","Antonio","Nadia","Federica","Nino");
 
-  myarticolo: Articolo = new Articolo; //qui abbiamo dovuto dichiarare il fatto che questo componente, ha un articolo.
-
+  //myarticolo: Articolo; //qui abbiamo dovuto dichiarare il fatto che questo componente, ha un articolo.
+  myArray : Array<string>;
+  
   //per comodità, nel costruttore, abbiamo inziializzato l'oggetto, questa parte, può essere spostata in articolo.component.ts
   constructor() {
-    this.myarticolo.titolo = "la bella vita";
-    this.myarticolo.autore ="Alberto";
-    this.myarticolo.titolo = "nel mezzo del cammin di nostra vita";
+    /* this.myarticolo = {
+      testo : "nel mezzo del cammin.",
+      autore : "albertp",
+      titolo : "la bella vita"
+    }; */
+    this.myArray = ['ciao','bella','cane','gatto','lupo','elefante'];
    }
 
 }
