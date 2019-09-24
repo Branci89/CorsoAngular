@@ -1,0 +1,15 @@
+<p>
+  articolo works!
+</p>
+<p>{{articolo.autore}}</p>
+<p>{{articolo.titolo}}</p>
+<p>{{articolo.testo}}</p> 
+<div style="width: 100%">
+  <div> Like : {{articolo.numApprezzamenti}}</div>
+  <button on-click="incrApprezzamenti()"> LIKE</button>
+</div>
+
+
+<ul>
+  <li *ngFor="let str of masterArray">{{str}} </li>
+</ul>
