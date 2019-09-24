@@ -19,4 +19,8 @@ export class ArticoloComponent  {
 
     @Input() articolo: Articolo;
     @Input() masterArray: Array<string>;
+
+    incrApprezzamenti () {
+      this.articolo.numApprezzamenti = this.articolo.numApprezzamenti + 1;
+    }
 }
