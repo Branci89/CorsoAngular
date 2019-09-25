@@ -1,0 +1,8 @@
+<p>
+  lista-articoli works!
+</p>
+<ul>
+	<li *ngFor="let articolo of listaArt">
+		<b>{{articolo.titolo}}</b> <b>  di  {{articolo.autore}}</b>  descrizione  <b>{{articolo.testo | customPipe: 10}}</b>
+	</li>
+</ul>

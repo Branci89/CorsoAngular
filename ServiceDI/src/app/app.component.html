@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>{{title}}</h1> 
+  <!-- 
+  <articolo [articolo]="myArticolo" (like)="mostraMessaggioRingraziamento($event)"></articolo>
+-->
+  <!--  BINDING COMBINATO TRA ELEMENTI.....
+  Inserisci un numero: 
+  <input type="number" ref-numero (keyup)="0" /> 
+  <div> 
+    Il doppio di {{numero.value}} &egrave; {{numero.value * 2}} 
+  </div> 
+  
+  -->
+
+  <!-- 
+TWO WAY DATA-BINDING
+
+<input type="number" [value]="numero" (input)="numero = $event.target.value" /> 
+<div> 
+  Il doppio di {{numero}} &egrave; {{numero * 2}} 
+</div> 
+
+-->
+<!--
+con ng model....
+Yes that's it, in the app.module.ts, I just added :
+
+import { FormsModule } from '@angular/forms';
+
+[...]
+
+@NgModule({
+  imports: [
+    [...]
+    FormsModule
+  ],
+  [...]
+})
+-->
+
+
+
+<!-- 
+Inserisci un numero: 
+<input type="number" [(ngModel)]="numero" /> 
+<div> 
+  Il doppio di {{numero}} &egrave; {{numero * 2}} 
+</div> 
+<router-outlet></router-outlet>
+-->
+<app-articolo-form (submit)="addArticolo($event)"></app-articolo-form>
+<app-lista-articoli [listaArt]= "elencoArticoli"></app-lista-articoli>
+ 

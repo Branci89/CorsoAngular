@@ -1,0 +1,25 @@
+<!--  pristine 	valore booleano che indica se c’è stata una qualsiasi interazione con l’utente o meno; 
+  il valore true indica che l’oggetto si trova nello stato iniziale
+https://code.tutsplus.com/it/tutorials/introduction-to-forms-in-angular-4-template-driven-forms--cms-29766
+-->
+
+
+
+<form [formGroup]="myForm">
+    <div>
+      <label for="txtTitolo">Titolo</label>
+      <input type="text" formControlName="txtTitolo">
+      <span [hidden]="myForm.controls.txtTitolo.valid || myForm.controls.txtTitolo.pristine">Il titolo è obbligatorio e
+        non può superare i 30 caratteri!</span>
+    </div>
+    <div>
+      <label for="txtAutore">Autore1</label>
+      <input type="text" formControlName="txtAutore">
+    </div>
+    <div>
+      <label for="txtTesto">Testo1</label>
+      <textarea formControlName="txtTesto"></textarea>
+    </div>
+    <button type="button" (click)="visualizzaArticolo()">InviaAAA</button>
+
+  </form>
