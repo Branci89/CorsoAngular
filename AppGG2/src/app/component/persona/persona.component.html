@@ -1,16 +1,17 @@
 
-<button on-click="faiAzione()">{{MessStampa}}</button>
 
-<section class = "w3-row w3-border" *ngFor="let pers of persons">
-  <div class="w3-container" style="width: 80%; margin: auto;">  
-  <div class= "w3-container w3-quarter">
-      <img [src]= "pers.img" width=200>
+
+<section class = "w3-row w3-border" [ngClass]= "like ? 'green' : 'withe'">
+  <div class="w3-container">  
+  <div class= "w3-container">
+      <img [src]= "person.img" width=200>
     </div>
     <div class="w3-half">
-        <p>Nome: {{pers.nome}}</p>
-        <p>Cognome: {{pers.cognome}}</p>
-        <p>Codice Fiscale: {{pers.cf}}</p>
-        <p>Email: {{pers.email}}</p>
+        <p>Nome: {{person.nome}}</p>
+        <p>Cognome: {{person.cognome}}</p>
+        <p>Codice Fiscale: {{person.cf}}</p>
+        <p>Email: {{person.email}}</p>
+        <button class="w3-button w3-right" (click)="likeFn()">{{likeBtn}}</button>
     </div>
   </div>
 </section>
