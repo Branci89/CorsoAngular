@@ -1,0 +1,16 @@
+<form [formGroup]="myForm">
+  <div>
+    <label for="txtTitolo">Titolo1</label>
+    <input type="text" formControlName="txtTitolo">
+  </div>
+  <div>
+    <label for="txtAutore">Autore1</label>
+    <input type="text" formControlName="txtAutore">
+  </div>
+  <div>
+    <label for="txtTesto">Testo1</label>
+    <textarea formControlName="txtTesto"></textarea>
+  </div>
+  <button type="button" (click)="visualizzaArticolo()">InviaAAA</button>
+  
+</form>

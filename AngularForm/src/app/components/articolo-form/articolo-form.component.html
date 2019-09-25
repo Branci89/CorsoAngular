@@ -1,0 +1,36 @@
+
+
+<!-- <form class="w3-container w3-quarter">
+  <div class="w3-container">
+    <label for="txtTitolo"> Titolo</label>
+    <input class="w3-input" type="text" id="txtTitolo" required [(ngModel)]="model.titolo" name ="titolo" >
+  </div>
+  <div class="w3-container">
+    <label for="txtAutore"> Autore</label>
+    <input class="w3-input" type="text" id="txtAutore" required [(ngModel)]="model.autore" name ="autore">
+  </div>
+  <div class="w3-container">
+    <label for="txtTesto"> Testo </label>
+    <textarea class="w3-input" id="txtTesto" required [(ngModel)]="model.testo" name ="testo"> </textarea>
+  </div>
+  <button class="w3-button w3-white w3-border w3-border-green w3-round-large" type="button">Invia</button>
+</form> -->
+
+<form class="w3-container w3-quarter" #myForm="ngForm">
+  <div class="w3-container">
+    <label for="txtTitolo"> Titolo</label>
+    <input class="w3-input" type="text" id="txtTitolo" required [(ngModel)]="model.titolo" name ="titolo" #myTitolo="ngModel">
+    <span [hidden]="myTitolo.valid || myTitolo.pristine">Il titolo è obbligatorio</span>
+  </div>
+  <div class="w3-container">
+    <label for="txtAutore"> Autore</label>
+    <input class="w3-input" type="text" id="txtAutore" required [(ngModel)]="model.autore" name ="autore" #myAutore="ngModel">
+    <span [hidden]="myAutore.valid || myAutore.pristine">L' autore è obbligatorio</span>
+  </div>
+  <div class="w3-container">
+    <label for="txtTesto"> Testo </label>
+    <textarea class="w3-input" id="txtTesto" required [(ngModel)]="model.testo" name ="testo" #myTxt="ngModel"> </textarea>
+    <span [hidden]="myTxt.valid || myTxt.pristine">Il testo è obbligatorio</span>
+  </div>
+  <button class="w3-button w3-white w3-border w3-border-green w3-round-large w3-right w3-margin-top" type="button" [disabled]="!myForm.valid">Invia</button>
+</form>
