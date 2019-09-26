@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { Persona } from 'src/app/models/persona';
 
 @Component({
@@ -6,7 +6,8 @@ import { Persona } from 'src/app/models/persona';
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
 })
-export class PersonaComponent  {
+export class PersonaComponent   {
+ 
 
   @Input() person : Persona
  
@@ -15,12 +16,11 @@ export class PersonaComponent  {
   constructor() {
    }
 
+   
   
    likeFn(){
-     this.like = !this.like;
-     if(this.like) this.likeBtn = "Dislike";
-     else this.likeBtn ="Like!";
-       }
+     this.person.isFollowed = !this.person.isFollowed;
+  }
 
 
 }

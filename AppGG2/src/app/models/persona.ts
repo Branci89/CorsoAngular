@@ -4,4 +4,5 @@ export class Persona {
     cognome: string;
     cf: string;
     img: string;
+    isFollowed: boolean;
 }
