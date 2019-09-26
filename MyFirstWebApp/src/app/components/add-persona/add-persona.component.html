@@ -1,0 +1,26 @@
+
+
+<form class="w3-container w3-half ">
+  <div>
+    <input class="w3-input" type="text" [(ngModel)]="personaDetail.nome" name = "nome" placeholder="Name" [required]="personaDetail.nome">
+  </div>
+ 
+  <div>
+    
+    <input class="w3-input" type="text" [(ngModel)]="personaDetail.cognome" name = "cognome" placeholder="Cognome" [required]="personaDetail.cognome">
+  </div>
+  <div>
+    
+    <input class="w3-input" type="text" [(ngModel)]="personaDetail.cf" name = "cf" placeholder="C.F." [required]="personaDetail.cf">
+  </div>
+  <div>
+    
+    <input class="w3-input" type="email" [(ngModel)]="personaDetail.email" name = "email" placeholder="Email" [required]="personaDetail.email">
+  </div>
+  <div>
+   
+    <input class="w3-input" type="url" [(ngModel)]="personaDetail.img" name = "img" placeholder="Url Immagine">
+  </div>
+  
+  <button class="w3-button w3-white w3-border w3-border-green w3-round-large w3-right" type="button" (click)="addPersona()"> Crea </button>
+</form>

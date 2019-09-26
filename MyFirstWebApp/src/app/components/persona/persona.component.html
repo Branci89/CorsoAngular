@@ -1,0 +1,22 @@
+
+
+<section class = "w3-row w3-border" [ngClass]= "person.isFollowed ? 'green' : 'withe'">
+  <div class="w3-container">  
+
+    <div class= "w3-container">
+        <img [src]= "person.img" width=200>
+    </div>
+    <div class="w3-half">
+        <p>ID: {{person.id}}</p>
+        <p>Nome: {{person.nome}}</p>
+        <p>Cognome: {{person.cognome}}</p>
+        <p>Codice Fiscale: {{person.cf}}</p>
+        <p>Email: {{person.email}}</p>
+        <button class="w3-button w3-white w3-border w3-border-green w3-round-large w3-right" 
+        (click)="likeFn(person.id)">{{person.isFollowed ? "Dislike" : "Like"}}</button>
+        
+        <button class="w3-button w3-white w3-border w3-border-red w3-round-large w3-right" 
+        (click)="deletePerson(person.id)">Delete</button>
+    </div>
+</div>
+</section>
