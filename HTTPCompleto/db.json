@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Tony Stark",
+      "email": "tony@mcu.com",
+      "phone": "001-123-4567"
+    },
+    {
+      "id": 2,
+      "name": "Black Widow",
+      "email": "black-widow@mcu.com",
+      "phone": "001-123-4568"
+    },
+    {
+      "name": "a",
+      "email": "a",
+      "phone": 0,
+      "id": 3
+    },
+    {
+      "name": "a",
+      "email": "a",
+      "phone": "011",
+      "id": 4
+    },
+    {
+      "name": "andrea",
+      "email": "prova",
+      "phone": "dasd",
+      "id": 5
+    },
+    {
+      "name": "prova123",
+      "email": "prova@prova.itdas",
+      "phone": "123",
+      "id": 6
+    },
+    {
+      "name": "dsada",
+      "email": "dsadsa",
+      "phone": "123",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": 0,
+      "id": 8
+    }
+  ]
+}

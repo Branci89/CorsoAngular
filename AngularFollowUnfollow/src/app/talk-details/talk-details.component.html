@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{talk.event_name}}</h5>
+    <p class="card-text">{{talk.author}}</p>
+    <p class="card-text">{{talk.topic}}</p>
+    <p class="card-text">{{talk.description}}</p>
+    <button class="btn" (click)="premi()" [ngClass]="talk.scritta=='follow' ? 'follow': 'unfollow'">{{talk.scritta}}</button>
+  </div>
+</div>
